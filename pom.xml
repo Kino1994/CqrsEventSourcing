@@ -12,7 +12,7 @@
 	<groupId>es.joaquin</groupId>
 	<artifactId>cqrses</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cqrses</name>
+	<name>CqrsEventSourcing</name>
 	<description>CQRS And Event Sourcing Ecommerce Application</description>
 	<properties>
 		<java.version>1.8</java.version>
