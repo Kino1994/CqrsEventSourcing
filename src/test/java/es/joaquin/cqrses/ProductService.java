@@ -10,11 +10,11 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.modelmapper.ModelMapper;
 
-import es.joaquin.cqrses.domain.FullProductDTO;
-import es.joaquin.cqrses.domain.Product;
-import es.joaquin.cqrses.domain.ProductDTO;
-import es.joaquin.cqrses.domain.ProductRepository;
-import es.joaquin.cqrses.domain.ProductServiceImpl;
+import es.joaquin.cqrses.domain.dto.FullProductDTO;
+import es.joaquin.cqrses.domain.dto.ProductDTO;
+import es.joaquin.cqrses.domain.model.Product;
+import es.joaquin.cqrses.domain.repository.ProductRepository;
+import es.joaquin.cqrses.domain.service.ProductServiceImpl;
 
 @TestMethodOrder(OrderAnnotation.class)
 public class ProductService {
@@ -49,7 +49,7 @@ public class ProductService {
 	@Test
 	@Order(2)
 	void productCanBeDeleted() {
-		productService.deleteProduct(createdProduct.getId());
+		productService.deleteProduct(createdProduct);
 		verify(productRepository).deleteById(createdProduct.getId());
 	}
 }

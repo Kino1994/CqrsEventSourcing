@@ -3,8 +3,8 @@ package es.joaquin.cqrses.service;
 import java.util.List;
 import java.util.Random;
 
-import es.joaquin.cqrses.domain.ShoppingCartItem;
-import es.joaquin.cqrses.domain.ValidationService;
+import es.joaquin.cqrses.domain.model.ShoppingCartItem;
+import es.joaquin.cqrses.domain.service.ValidationService;
 
 public class ValidationServiceImpl implements ValidationService {
 

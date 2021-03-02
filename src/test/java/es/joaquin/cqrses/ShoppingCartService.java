@@ -13,15 +13,15 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.modelmapper.ModelMapper;
 
-import es.joaquin.cqrses.domain.FullProductDTO;
-import es.joaquin.cqrses.domain.FullShoppingCartDTO;
-import es.joaquin.cqrses.domain.FullShoppingCartItemDTO;
-import es.joaquin.cqrses.domain.Product;
-import es.joaquin.cqrses.domain.ProductDTO;
-import es.joaquin.cqrses.domain.ProductRepository;
-import es.joaquin.cqrses.domain.ProductServiceImpl;
-import es.joaquin.cqrses.domain.ShoppingCartRepository;
-import es.joaquin.cqrses.domain.ShoppingCartServiceImpl;
+import es.joaquin.cqrses.domain.dto.FullProductDTO;
+import es.joaquin.cqrses.domain.dto.FullShoppingCartDTO;
+import es.joaquin.cqrses.domain.dto.FullShoppingCartItemDTO;
+import es.joaquin.cqrses.domain.dto.ProductDTO;
+import es.joaquin.cqrses.domain.model.Product;
+import es.joaquin.cqrses.domain.repository.ProductRepository;
+import es.joaquin.cqrses.domain.repository.ShoppingCartRepository;
+import es.joaquin.cqrses.domain.service.ProductServiceImpl;
+import es.joaquin.cqrses.domain.service.ShoppingCartServiceImpl;
 import es.joaquin.cqrses.service.ValidationServiceImpl;
 
 @TestMethodOrder(OrderAnnotation.class)
