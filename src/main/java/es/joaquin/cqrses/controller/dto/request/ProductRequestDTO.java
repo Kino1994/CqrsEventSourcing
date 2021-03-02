@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.controller.dto;
+package es.joaquin.cqrses.controller.dto.request;
 
 public class ProductRequestDTO {
 

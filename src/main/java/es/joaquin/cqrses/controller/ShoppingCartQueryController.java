@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.joaquin.cqrses.controller.dto.ShoppingCartResponseDTO;
-import es.joaquin.cqrses.layer.application.ShoppingCartQueryService;
+import es.joaquin.cqrses.application.layer.ShoppingCartQueryService;
+import es.joaquin.cqrses.controller.dto.response.ShoppingCartResponseDTO;
 
 @RestController
 @RequestMapping("/api/shoppingcarts")

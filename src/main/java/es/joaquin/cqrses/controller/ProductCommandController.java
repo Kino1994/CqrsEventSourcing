@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.joaquin.cqrses.controller.dto.ProductRequestDTO;
-import es.joaquin.cqrses.controller.dto.ProductResponseDTO;
+import es.joaquin.cqrses.application.layer.ProductCommandService;
+import es.joaquin.cqrses.controller.dto.request.ProductRequestDTO;
+import es.joaquin.cqrses.controller.dto.response.ProductResponseDTO;
 import es.joaquin.cqrses.domain.dto.FullProductDTO;
 import es.joaquin.cqrses.domain.dto.ProductDTO;
-import es.joaquin.cqrses.layer.application.ProductCommandService;
 
 @RestController
 @RequestMapping("/api/products")

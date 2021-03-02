@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.controller.dto;
+package es.joaquin.cqrses.controller.dto.request;
 
 import es.joaquin.cqrses.domain.model.ShoppingCartStatus;
 

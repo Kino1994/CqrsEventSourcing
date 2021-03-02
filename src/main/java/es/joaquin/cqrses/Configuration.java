@@ -6,8 +6,8 @@ import es.joaquin.cqrses.domain.service.ProductService;
 import es.joaquin.cqrses.domain.service.ProductServiceImpl;
 import es.joaquin.cqrses.domain.service.ShoppingCartService;
 import es.joaquin.cqrses.domain.service.ShoppingCartServiceImpl;
-import es.joaquin.cqrses.infrastructure.adapter.SpringDataJPAProductRepositoryAdapter;
-import es.joaquin.cqrses.infrastructure.adapter.SpringDataJPAShoppingCartRepositoryAdapter;
+import es.joaquin.cqrses.infrastructure.adapter.exception.SpringDataJPAProductRepositoryAdapter;
+import es.joaquin.cqrses.infrastructure.adapter.exception.SpringDataJPAShoppingCartRepositoryAdapter;
 import es.joaquin.cqrses.service.ValidationServiceImpl;
 
 @org.springframework.context.annotation.Configuration

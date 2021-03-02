@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.joaquin.cqrses.controller.dto.ShoppingCartRequestDTO;
-import es.joaquin.cqrses.controller.dto.ShoppingCartResponseDTO;
+import es.joaquin.cqrses.application.layer.ShoppingCartCommandService;
+import es.joaquin.cqrses.controller.dto.request.ShoppingCartRequestDTO;
+import es.joaquin.cqrses.controller.dto.response.ShoppingCartResponseDTO;
 import es.joaquin.cqrses.domain.dto.FullShoppingCartDTO;
 import es.joaquin.cqrses.domain.dto.ShoppingCartDTO;
-import es.joaquin.cqrses.layer.application.ShoppingCartCommandService;
 
 @RestController
 @RequestMapping("/api/shoppingcarts")

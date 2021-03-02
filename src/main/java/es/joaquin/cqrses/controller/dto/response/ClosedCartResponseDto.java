@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.controller.dto;
+package es.joaquin.cqrses.controller.dto.response;
 
 import java.util.UUID;
 

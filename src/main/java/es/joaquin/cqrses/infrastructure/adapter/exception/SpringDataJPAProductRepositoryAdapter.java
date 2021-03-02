@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.infrastructure.adapter;
+package es.joaquin.cqrses.infrastructure.adapter.exception;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 import es.joaquin.cqrses.domain.dto.FullProductDTO;
 import es.joaquin.cqrses.domain.repository.ProductRepository;
+import es.joaquin.cqrses.infrastructure.adapter.ProductNotFoundException;
 import es.joaquin.cqrses.infrastructure.entity.ProductEntity;
-import es.joaquin.cqrses.infrastructure.exception.ProductNotFoundException;
 import es.joaquin.cqrses.infrastructure.repository.SpringDataJPAProductRepository;
 
 @Component

@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.infrastructure.adapter;
+package es.joaquin.cqrses.infrastructure.adapter.exception;
 
 import java.util.UUID;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 import es.joaquin.cqrses.domain.dto.FullShoppingCartDTO;
 import es.joaquin.cqrses.domain.repository.ShoppingCartRepository;
+import es.joaquin.cqrses.infrastructure.adapter.ShoppingCartNotFoundException;
 import es.joaquin.cqrses.infrastructure.entity.ShoppingCartEntity;
-import es.joaquin.cqrses.infrastructure.exception.ShoppingCartNotFoundException;
 import es.joaquin.cqrses.infrastructure.repository.SpringDataJPAShoppingCartRepository;
 
 @Component

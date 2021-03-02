@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.infrastructure.adapter;
+package es.joaquin.cqrses.infrastructure.adapter.exception;
 
 import java.util.Arrays;
 import java.util.Collection;

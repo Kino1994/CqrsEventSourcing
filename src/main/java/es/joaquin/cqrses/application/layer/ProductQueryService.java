@@ -1,4 +1,4 @@
-package es.joaquin.cqrses.layer.application;
+package es.joaquin.cqrses.application.layer;
 
 import java.util.Collection;
 import java.util.UUID;
