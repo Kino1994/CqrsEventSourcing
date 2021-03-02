@@ -93,6 +93,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 		ShoppingCartItem shoppingCartItem = new ShoppingCartItem(
 		        mapper.map(fullProductDTO, Product.class),
 		        quantity);
+		shoppingCartItem.setId(UUID.randomUUID());
 		shoppingCart.addItem(shoppingCartItem);
 
 		FullShoppingCartDTO newFullProductDTO = mapper.map(shoppingCart, FullShoppingCartDTO.class);

@@ -36,6 +36,7 @@ public class SpringDataJPAProductRepositoryAdapter implements ProductRepository 
 	@Override
 	public FullProductDTO save(FullProductDTO product) {
 		ProductEntity productEntity = mapper.map(product, ProductEntity.class);
+		productEntity.setId(UUID.randomUUID());
 		repository.save(productEntity);
 
 		return mapper.map(productEntity, FullProductDTO.class);

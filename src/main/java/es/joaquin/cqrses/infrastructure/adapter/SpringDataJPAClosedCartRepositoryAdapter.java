@@ -2,6 +2,7 @@ package es.joaquin.cqrses.infrastructure.adapter;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.UUID;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
@@ -30,6 +31,7 @@ public class SpringDataJPAClosedCartRepositoryAdapter implements ClosedCartRepos
 	@Override
 	public ClosedCartDto save(ClosedCartDto cart) {
 		ClosedCartEntity closedCartEntity = mapper.map(cart, ClosedCartEntity.class);
+		closedCartEntity.setCartId(UUID.randomUUID());
 		repository.save(closedCartEntity);
 
 		return mapper.map(closedCartEntity, ClosedCartDto.class);

@@ -30,6 +30,7 @@ public class SpringDataJPAShoppingCartRepositoryAdapter implements ShoppingCartR
 	@Override
 	public FullShoppingCartDTO save(FullShoppingCartDTO shoppingCart) {
 		ShoppingCartEntity shoppingCartEntity = mapper.map(shoppingCart, ShoppingCartEntity.class);
+		shoppingCartEntity.setId(UUID.randomUUID());
 		repository.save(shoppingCartEntity);
 
 		return findById(shoppingCartEntity.getId());
