@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import es.joaquin.cqrses.domain.model.ShoppingCartStatus;
@@ -12,6 +13,7 @@ import es.joaquin.cqrses.domain.model.ShoppingCartStatus;
 @Entity
 public class ShoppingCartEntity {
 
+	@Id
 	private UUID id;
 
 	private ShoppingCartStatus status;

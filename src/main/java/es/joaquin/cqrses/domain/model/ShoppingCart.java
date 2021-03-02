@@ -9,7 +9,7 @@ import es.joaquin.cqrses.domain.service.ValidationService;
 
 public class ShoppingCart {
 
-	private String id;
+	private UUID id;
 	private ShoppingCartStatus status;
 	private List<ShoppingCartItem> items;
 
@@ -22,11 +22,11 @@ public class ShoppingCart {
 		this.items = new ArrayList<>();
 	}
 
-	public String getId() {
+	public UUID getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(UUID id) {
 		this.id = id;
 	}
 

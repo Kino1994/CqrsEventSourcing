@@ -1,8 +1,10 @@
 package es.joaquin.cqrses.domain.model;
 
+import java.util.UUID;
+
 public class Product {
 
-	private String id;
+	private UUID id;
 	private String name;
 	private String description;
 	private double price;
@@ -18,11 +20,11 @@ public class Product {
 		this.price = price;
 	}
 
-	public String getId() {
+	public UUID getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(UUID id) {
 		this.id = id;
 	}
 
